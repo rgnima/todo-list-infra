@@ -1,4 +1,12 @@
-data "azuread_client_config" "current" {}
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "4.14.0"
+    }
+  }
+}
+#data "azuread_client_config" "current" {}
 ## aks ##
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "aksrgnima"
