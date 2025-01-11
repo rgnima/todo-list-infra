@@ -1,4 +1,5 @@
 ## aks ##
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "aksrgnima"
   location            = var.rgLocation
