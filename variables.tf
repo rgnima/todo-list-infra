@@ -1,7 +1,7 @@
 variable "rgName" {
   type        = string
   description = "Nombre Grupo de recursos"
-  default     = "rg-devops"
+  default     = "rg-devops2"
 }
 variable "rgLocation" {
   type        = string
