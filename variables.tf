@@ -9,17 +9,3 @@ variable "rgLocation" {
   default     = "eastus2"
 }
 
-# variable "aksadminID" {
-#   type = list
-#   description = "ID aks admin group"
-# }
-
-# variable "SubNetAKSPool" { 
-#   type        = string
-#   description = "Subnet de AKS"
-# }
-
-# variable "VNetName" {
-#   type        = string
-#   description = "Subnet de AKS"
-# }

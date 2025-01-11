@@ -1,12 +1,12 @@
-data "azuread_client_config" "current" {}
 ## aks ##
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "aksrgnima"
   location            = var.rgLocation
   resource_group_name = var.rgName
   dns_prefix          = "aksrgnima"  
   sku_tier            = "Free"
-  kubernetes_version  = "1.30.6"
+  kubernetes_version  = "1.30.5"
   #azure_policy_enabled = true
   
   default_node_pool {
@@ -33,18 +33,3 @@ resource "azurerm_kubernetes_cluster" "aks" {
  
 }
 
-## acr ##
-resource "azurerm_container_registry" "acr" {
-  name                = "acrdemontt"
-  resource_group_name = var.rgName 
-  location            = var.rgLocation 
-  sku                 = "Basic"
-  admin_enabled       = false
-
-}
-resource "azurerm_role_assignment" "aks_role" {
-  principal_id                     = data.azurerm_kubernetes_cluster.aks.kubelet_identity[0].object_id
-  role_definition_name             = "AcrPull"
-  scope                            = azurerm_container_registry.acr.id
-  skip_service_principal_aad_check = true
-}
