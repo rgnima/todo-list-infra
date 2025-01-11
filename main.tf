@@ -6,7 +6,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   resource_group_name = var.rgName
   dns_prefix          = "aksrgnimapref" 
   sku_tier            = "Free"
-  #kubernetes_version  = "1.29.4"
+  kubernetes_version  = "1.29.4"
   #azure_policy_enabled = true
    default_node_pool {
     name       = "default"
