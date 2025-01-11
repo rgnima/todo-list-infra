@@ -12,7 +12,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   default_node_pool {
     name       = "devpool01"
     node_count = 1
-    vm_size    = "Standard_B2s"
+    vm_size    = "Standard_D2s_v3"
     os_sku = "Ubuntu"
     os_disk_size_gb = 30
     os_disk_type = "Managed"
