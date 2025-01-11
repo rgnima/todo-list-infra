@@ -1,17 +1,15 @@
-
-
 terraform {
 
-  backend "azurerm" {
+backend "azurerm" {
     key = "github.terraform.tfstate"
-  }
+}
 
-  required_version = ">=0.13"
+required_version = ">=0.13"
 
-  required_providers {
+required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>4.0"
+      version = "~>4.2.0"
     }
   }
 }
