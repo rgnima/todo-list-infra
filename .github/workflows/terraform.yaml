@@ -43,8 +43,8 @@ jobs:
       id: plan
       run: terraform plan -no-color
     # On workflow dispatch build or change infrastructure according to Terraform configuration files
-    #- name: Terraform Apply
-    #  run: terraform apply -auto-approve 
+    - name: Terraform Apply
+      run: terraform apply -auto-approve 
      # Destroy the infrastructure
     #- name: Terraform Destroy
     #  run: terraform destroy -auto-approve
