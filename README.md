@@ -6,7 +6,7 @@ Este repositorio contiene los archivos terrafom y configuración necesaria para 
 El despliegue del AKS se gatilla con github actions al hacer merge a la rama main.
 ## Descripción de Archivos
 ### main.tf
-Es el archivo principal que contiene el resource AKS en con nombre aksrgnima
+Es el archivo principal que contiene el resource AKS en con nombre **aksrgnima**
 ## terraform.tf
 Contiene los provider necesarios para que terraform pueda desplegar recursos en azure
 ### Variables
