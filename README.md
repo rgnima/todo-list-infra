@@ -2,7 +2,7 @@
 
 ## Despliegue de Infraestructura con Terrafom y github Actions
 ### Descripción
-Este repositorio contiene los archivos terrafom y configuración necesaria para el despliegue de un AKS en azure, sobre el cual se desplegara la aplicación, base de datos y los componentes de monitoreo (prometheus y grafana)
+Este repositorio contiene los archivos terrafom y configuración necesaria para el despliegue de un AKS en azure, sobre el cual se despliega la aplicación, base de datos y los componentes de monitoreo (prometheus y grafana)
 El despliegue del AKS se gatilla con github actions al hacer merge a la rama main.
 ## Descripción de Archivos
 ### main.tf
