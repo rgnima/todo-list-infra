@@ -13,24 +13,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     node_count = 1    
     vm_size    = "Standard_D2s_v3"
   }
-  #default_node_pool {
-  #  name       = "devpool01"
-  #  node_count = 1
-  #  vm_size    = "Standard_D2s_v3"
-  #  os_sku = "Ubuntu"
-  #  os_disk_size_gb = 30
-  #  os_disk_type = "Managed"
-    #vnet_subnet_id = data.azurerm_subnet.SubNetAKSPool.id
-    #enable_auto_scaling = false        
-    
-  #}
-  #network_profile {
-  #  network_plugin    = "azure"
-  #  load_balancer_sku = "standard"
-  #  network_policy = "calico"
-    
-  #}
-
+  
   identity {
     type = "SystemAssigned"
   }
