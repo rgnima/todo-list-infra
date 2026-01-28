@@ -6,6 +6,6 @@ variable "rgName" {
 variable "rgLocation" {
   type        = string
   description = "Ubicacion de Grupo de recursos"
-  default     = "eastus"
+  default     = "eastus2"
 }
 
