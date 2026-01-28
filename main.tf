@@ -6,12 +6,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
   resource_group_name = var.rgName
   dns_prefix          = "aksmaxelitpref" 
   sku_tier            = "Free"
-  kubernetes_version  = "1.30.6"
+  kubernetes_version  = "1.33.6"
   #azure_policy_enabled = true
    default_node_pool {
     name       = "default"
     node_count = 1    
-    vm_size    = "Standard_D2s_v3"
+    vm_size    = "Standard_D2s_v5"
   }
   
   identity {
