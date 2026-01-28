@@ -1,10 +1,10 @@
 ## aks ##
 
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "aksrgnima"
+  name                = "aksmaxelit"
   location            = var.rgLocation
   resource_group_name = var.rgName
-  dns_prefix          = "aksrgnimapref" 
+  dns_prefix          = "aksmaxelitpref" 
   sku_tier            = "Free"
   kubernetes_version  = "1.30.6"
   #azure_policy_enabled = true
